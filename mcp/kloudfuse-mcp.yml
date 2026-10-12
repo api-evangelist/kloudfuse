@@ -1,0 +1,133 @@
+generated: '2026-10-13'
+method: searched
+source: https://docs.kloudfuse.com/platform/latest/ai-ml/mcp-server/tools/
+provider: kloudfuse
+servers:
+- name: Kloudfuse MCP Server
+  transport: streamable-http
+  url_template: https://<KLOUDFUSE_URL>/mcp
+  deployment: self-hosted per customer cluster (remote) or local
+  auth:
+  - OAuth
+  - Service Account token
+  docs:
+  - https://docs.kloudfuse.com/platform/latest/ai-ml/mcp-server/remote-instructions/
+  - https://docs.kloudfuse.com/platform/latest/ai-ml/mcp-server/local-instructions/
+  - https://docs.kloudfuse.com/platform/latest/ai-ml/mcp-server/oauth/enable-on-cluster/
+  tool_count: 54
+  tools:
+  - name: query_prometheus
+    group: Metrics
+  - name: search_prometheus_label_names
+    group: Metrics
+  - name: search_prometheus_label_values
+    group: Metrics
+  - name: query_logs
+    group: Logs
+  - name: get_log_context
+    group: Logs
+  - name: search_log_fingerprints
+    group: Logs
+  - name: get_log_label_names
+    group: Logs
+  - name: get_log_label_values
+    group: Logs
+  - name: get_log_facet_names
+    group: Logs
+  - name: get_log_facet_values
+    group: Logs
+  - name: search_apm_services
+    group: APM
+  - name: search_apm_dependencies
+    group: APM
+  - name: get_apm_service_nodes
+    group: APM
+  - name: search_apm_traces
+    group: APM
+  - name: get_apm_trace_waterfall
+    group: APM
+  - name: get_apm_span_details
+    group: APM
+  - name: search_apm_trace_errors
+    group: APM
+  - name: get_apm_label_names
+    group: APM
+  - name: get_apm_label_values
+    group: APM
+  - name: get_alert_summary
+    group: Alerts
+  - name: search_alert_rules
+    group: Alerts
+  - name: search_alert_instances
+    group: Alerts
+  - name: get_alert_rule_queries
+    group: Alerts
+  - name: get_alert_history
+    group: Alerts
+  - name: search_dashboards
+    group: Dashboards
+  - name: search_folders
+    group: Dashboards
+  - name: list_dashboard_tags
+    group: Dashboards
+  - name: get_dashboard
+    group: Dashboards
+  - name: get_dashboard_panel_queries
+    group: Dashboards
+  - name: get_events
+    group: Events
+  - name: get_event_label_names
+    group: Events
+  - name: get_event_facet_values
+    group: Events
+  - name: search_kubernetes
+    group: Infrastructure
+  - name: get_kubernetes_object_status
+    group: Infrastructure
+  - name: get_pyroscope_profile_types
+    group: Pyroscope
+  - name: get_pyroscope_label_names
+    group: Pyroscope
+  - name: get_pyroscope_label_values
+    group: Pyroscope
+  - name: get_pyroscope_series
+    group: Pyroscope
+  - name: get_pyroscope_flamegraph
+    group: Pyroscope
+  - name: get_pyroscope_time_series
+    group: Pyroscope
+  - name: diff_pyroscope_profiles
+    group: Pyroscope
+  - name: list_rum_applications
+    group: RUM
+  - name: search_rum_events
+    group: RUM
+  - name: get_rum_attributes
+    group: RUM
+  - name: get_rum_attribute_values
+    group: RUM
+  - name: get_rum_time_series
+    group: RUM
+  - name: get_rum_raw_event
+    group: RUM
+  - name: get_rum_error_groups
+    group: RUM
+  - name: get_rum_latency_distribution
+    group: RUM
+  - name: unminify_rum_stacktrace
+    group: RUM
+  - name: search_kloudfuse_docs
+    group: Docs
+  - name: get_kloudfuse_doc
+    group: Docs
+  - name: search_logs
+    group: LogQL
+  - name: query_log_metrics
+    group: LogQL
+deployment:
+  mode: both
+  auth: oauth
+  verified: searched
+  install: 'Per-customer cluster: https://<KLOUDFUSE_URL>/mcp'
+  endpoint: https://{kloudfuse-instance}/mcp
+  note: Endpoint is per customer instance; host is a template, not a public server.

@@ -1,0 +1,46 @@
+generated: '2026-10-13'
+method: searched
+source: https://docs.kloudfuse.com/platform/latest/reference/api/response-codes/
+provider: kloudfuse
+format: custom
+problems:
+- status: 400
+  title: BAD_REQUEST
+  type: BAD_REQUEST
+  transient: false
+- status: 401
+  title: UNAUTHORIZED
+  type: UNAUTHORIZED
+  transient: false
+- status: 403
+  title: FORBIDDEN
+  type: FORBIDDEN
+  transient: false
+- status: 404
+  title: NOT_FOUND
+  type: NOT_FOUND
+  transient: false
+- status: 422
+  title: RESOURCE_EXHAUSTED
+  type: RESOURCE_EXHAUSTED
+  transient: false
+- status: 429
+  title: RATE_LIMITED
+  type: RATE_LIMITED
+  transient: true
+- status: 499
+  title: CANCELED
+  type: CANCELED
+  transient: false
+- status: 500
+  title: INTERNAL_ERROR
+  type: INTERNAL_ERROR
+  transient: false
+- status: 503
+  title: SERVICE_UNAVAILABLE
+  type: SERVICE_UNAVAILABLE
+  transient: true
+- status: 504
+  title: TIMEOUT
+  type: TIMEOUT
+  transient: true

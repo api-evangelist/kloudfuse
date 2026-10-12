@@ -1,23 +1,121 @@
 aid: kloudfuse
 name: Kloudfuse
-description: 'Kloudfuse is a company surfaced via the API Evangelist harvest backlog (source: market-layer-gap)
-  and added to the network as a stub for full-pipeline profiling.'
+description: Kloudfuse is a unified observability platform that consolidates metrics, logs, traces, events, real user monitoring and continuous profiling into a single data lake deployed in the customer's
+  own cloud (VPC). It exposes Prometheus-, Loki- and Tempo-compatible query APIs, a GraphQL query transport, RBAC policy and team REST APIs, an OTLP/Prometheus remote-write ingester, a hydration API for
+  archived data, and an MCP server for AI assistants.
 url: https://raw.githubusercontent.com/api-evangelist/kloudfuse/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:market-layer-gap
-x-tier: stub
-x-tier-reason: harvest
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-13 (local-v5; was harvest)
 specificationVersion: '0.20'
 created: '2026-10-13'
 modified: '2026-10-13'
 tags:
 - Company
-apis: []
+- Observability
+- Monitoring
+- Logs
+- Metrics
+- Tracing
+- OpenTelemetry
+- MCP
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+image: https://www.kloudfuse.com/assets/og-default.png
 common:
+- type: Spectral
+  url: rules/kloudfuse-rules.yml
+- type: JSONLD
+  url: json-ld/kloudfuse-context.jsonld
+- type: Vocabulary
+  url: vocabulary/kloudfuse-vocabulary.yml
+- type: DataModel
+  url: data-model/kloudfuse-data-model.yml
+- type: Compliance
+  url: https://www.kloudfuse.com/security
+- type: Conformance
+  url: conformance/kloudfuse-conformance.yml
+- type: LLMsTxt
+  url: llms/kloudfuse-llms.txt
+- type: Hosts
+  url: hosts/kloudfuse-hosts.yml
+- type: Vendors
+  url: vendors/kloudfuse-vendors.yml
+- type: GettingStarted
+  url: https://docs.kloudfuse.com/platform/latest/setup/install/prequisites/index
+- type: TrustCenter
+  url: security/kloudfuse-trust-center.yml
+- type: DomainSecurity
+  url: security/kloudfuse-domain-security.yml
 - type: Website
   url: https://www.kloudfuse.com
+- type: Documentation
+  url: https://docs.kloudfuse.com/
+- type: APIReference
+  url: https://docs.kloudfuse.com/platform/latest/reference/api/metrics/
+- type: Authentication
+  url: https://docs.kloudfuse.com/platform/latest/administration/authentication/ingestion-api-key/
+- type: ErrorCatalog
+  url: errors/kloudfuse-problem-types.yml
+- type: MCPServer
+  url: mcp/kloudfuse-mcp.yml
+- type: ChangeLog
+  url: https://docs.kloudfuse.com/platform/latest/release-notes/
+- type: Deprecation
+  url: https://docs.kloudfuse.com/platform/latest/whats-new/deprecations/
+- type: Blog
+  url: https://www.kloudfuse.com/blog
+- type: Newsroom
+  url: https://www.kloudfuse.com/news
+- type: Pricing
+  url: https://www.kloudfuse.com/pricing
+- type: PrivacyPolicy
+  url: https://www.kloudfuse.com/legal/privacy
+- type: Sandbox
+  url: https://www.kloudfuse.com/playground
+- type: Security
+  url: https://www.kloudfuse.com/security
+- type: TrustCenter
+  url: https://trust.kloudfuse.com/
+- type: GitHubOrganization
+  url: https://github.com/kloudfuse
+- type: Leadership
+  url: https://www.kloudfuse.com/company
+- type: LLMsTxt
+  url: https://docs.kloudfuse.com/llms.txt
+apis:
+- aid: kloudfuse:platform-api
+  name: Kloudfuse Platform API
+  description: Query (PromQL, FuseQL/LogQL, TraceQL, GraphQL), ingestion, RBAC policies and teams, folders, cardinality and hydration APIs served from each customer's Kloudfuse instance, authenticated with
+    a Service Account bearer token.
+  humanURL: https://docs.kloudfuse.com/platform/latest/reference/api/ingester/
+  baseURL: https://{instance}
+  tags:
+  - Observability
+  - Metrics
+  - Logs
+  - Traces
+  properties:
+  - type: OpenAPI
+    url: openapi/_ae-authored/kloudfuse-platform-openapi.yml
+  - type: Documentation
+    url: https://docs.kloudfuse.com/platform/latest/reference/api/ingester/
+x-coverage:
+  state: none
+  reason: no-developer-program
+  method: derived
+  generated: '2026-10-13'
+  generator: derive-coverage.py (pre-flight evidence)
+  detail: the company publishes no developer documentation host and no machine-readable contract on its own domain
+  evidence:
+  - url: https://www.kloudfuse.com
+    status: 200
+x-enrichment:
+  date: '2026-10-13'
+  status: enriched
+  artifacts_added: 14
+  pass: local-v5
