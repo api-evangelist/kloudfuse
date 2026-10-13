@@ -115,7 +115,7 @@ x-coverage:
   - url: https://www.kloudfuse.com
     status: 200
 x-enrichment:
-  date: '2026-10-13'
   status: enriched
-  artifacts_added: 14
   pass: local-v5
+  date: '2026-10-13'
+  artifacts_added: 14
