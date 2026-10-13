@@ -1,5 +1,5 @@
 generated: '2026-10-13'
-method: none
+method: searched
 source:
 - https://zapier.com/apps/kloudfuse/integrations
 - https://n8n.io/integrations/kloudfuse/
@@ -7,10 +7,35 @@ source:
 - https://monid.ai/tools/kloudfuse
 checked:
 - https://composio.dev/toolkits/kloudfuse
+- https://github.com/open-telemetry/opentelemetry.io/blob/main/data/ecosystem/vendors.yaml
+- https://github.com/open-telemetry/opentelemetry.io/blob/main/data/registry/
 - https://monid.ai/tools/kloudfuse
 - https://n8n.io/integrations/kloudfuse/
 - https://zapier.com/apps/kloudfuse/integrations
 summary: null
 marketplace_apps: []
-edges: []
+edges:
+- partner_name: OpenTelemetry
+  partner: null
+  type: contract
+  channel: network-directory
+  relationship: standard-participant
+  direction: partner-built
+  evidence: https://github.com/open-telemetry/opentelemetry.io/blob/main/data/ecosystem/vendors.yaml
+  contract_reference:
+    register: OpenTelemetry ecosystem + registry (opentelemetry.io data/)
+    spec_file: null
+    role: otlp-native
+    registered_name: KloudFuse
+    matched_domain: kloudfuse.com
+    partner_match: domain
+    api_families:
+    - otlp-native
+    records:
+    - vendors.yaml: KloudFuse
+      nativeOTLP: true
+    detected_by: sweep-observability.py
+    detected: '2026-10-13'
+  detected_by: sweep-observability.py
+  detected: '2026-10-13'
 templates: []
