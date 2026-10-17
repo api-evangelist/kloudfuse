@@ -1,0 +1,27 @@
+{
+  "provider": "kloudfuse",
+  "sources": [
+    "_ae-authored/kloudfuse-platform-openapi.yml"
+  ],
+  "outputs": [
+    "kloudfuse-cardinality-explorer-api-openapi.yml",
+    "kloudfuse-events-api-openapi.yml",
+    "kloudfuse-folders-api-openapi.yml",
+    "kloudfuse-graphql-api-openapi.yml",
+    "kloudfuse-hydration-api-openapi.yml",
+    "kloudfuse-ingester-api-openapi.yml",
+    "kloudfuse-metrics-api-openapi.yml",
+    "kloudfuse-policies-api-openapi.yml",
+    "kloudfuse-teams-api-openapi.yml",
+    "kloudfuse-traces-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [
+    "sourced from openapi/_original/ (0 archived document(s)); previously refined output at the top level was skipped rather than re-split",
+    "kloudfuse-platform-openapi.yml: upgraded openapi 3.1.0 -> OpenAPI 3.2.0",
+    "apis.yml register: written (+10 apis, 10 total)"
+  ],
+  "skipped": []
+}

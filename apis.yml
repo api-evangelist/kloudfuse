@@ -88,20 +88,124 @@ common:
 - type: LLMsTxt
   url: https://docs.kloudfuse.com/llms.txt
 apis:
-- aid: kloudfuse:platform-api
-  name: Kloudfuse Platform API
-  description: Query (PromQL, FuseQL/LogQL, TraceQL, GraphQL), ingestion, RBAC policies and teams, folders, cardinality and hydration APIs served from each customer's Kloudfuse instance, authenticated with
-    a Service Account bearer token.
+- aid: kloudfuse:kloudfuse-cardinality-explorer-api
+  name: Kloudfuse Cardinality Explorer API
+  description: The Cardinality Explorer API from Kloudfuse — 3 operation(s) for cardinality explorer.
   humanURL: https://docs.kloudfuse.com/platform/latest/reference/api/ingester/
   baseURL: https://{instance}
   tags:
-  - Observability
+  - Cardinality Explorer
+  properties:
+  - type: OpenAPI
+    url: openapi/kloudfuse-cardinality-explorer-api-openapi.yml
+  - type: Documentation
+    url: https://docs.kloudfuse.com/platform/latest/reference/api/ingester/
+- aid: kloudfuse:kloudfuse-events-api
+  name: Kloudfuse Events API
+  description: The Events API from Kloudfuse — 1 operation(s) for events.
+  humanURL: https://docs.kloudfuse.com/platform/latest/reference/api/ingester/
+  baseURL: https://{instance}
+  tags:
+  - Events
+  properties:
+  - type: OpenAPI
+    url: openapi/kloudfuse-events-api-openapi.yml
+  - type: Documentation
+    url: https://docs.kloudfuse.com/platform/latest/reference/api/ingester/
+- aid: kloudfuse:kloudfuse-folders-api
+  name: Kloudfuse Folders API
+  description: The Folders API from Kloudfuse — 9 operation(s) for folders.
+  humanURL: https://docs.kloudfuse.com/platform/latest/reference/api/ingester/
+  baseURL: https://{instance}
+  tags:
+  - Folders
+  properties:
+  - type: OpenAPI
+    url: openapi/kloudfuse-folders-api-openapi.yml
+  - type: Documentation
+    url: https://docs.kloudfuse.com/platform/latest/reference/api/ingester/
+- aid: kloudfuse:kloudfuse-hydration-api
+  name: Kloudfuse Hydration API
+  description: The Hydration API from Kloudfuse — 7 operation(s) for hydration.
+  humanURL: https://docs.kloudfuse.com/platform/latest/reference/api/ingester/
+  baseURL: https://{instance}
+  tags:
+  - Hydration
+  properties:
+  - type: OpenAPI
+    url: openapi/kloudfuse-hydration-api-openapi.yml
+  - type: Documentation
+    url: https://docs.kloudfuse.com/platform/latest/reference/api/ingester/
+- aid: kloudfuse:kloudfuse-ingester-api
+  name: Kloudfuse Ingester API
+  description: The Ingester API from Kloudfuse — 5 operation(s) for ingester.
+  humanURL: https://docs.kloudfuse.com/platform/latest/reference/api/ingester/
+  baseURL: https://{instance}
+  tags:
+  - Ingester
+  properties:
+  - type: OpenAPI
+    url: openapi/kloudfuse-ingester-api-openapi.yml
+  - type: Documentation
+    url: https://docs.kloudfuse.com/platform/latest/reference/api/ingester/
+- aid: kloudfuse:kloudfuse-metrics-api
+  name: Kloudfuse Metrics API
+  description: The Metrics API from Kloudfuse — 5 operation(s) for metrics.
+  humanURL: https://docs.kloudfuse.com/platform/latest/reference/api/ingester/
+  baseURL: https://{instance}
+  tags:
   - Metrics
-  - Logs
+  properties:
+  - type: OpenAPI
+    url: openapi/kloudfuse-metrics-api-openapi.yml
+  - type: Documentation
+    url: https://docs.kloudfuse.com/platform/latest/reference/api/ingester/
+- aid: kloudfuse:kloudfuse-policies-api
+  name: Kloudfuse Policies API
+  description: The Policies API from Kloudfuse — 7 operation(s) for policies.
+  humanURL: https://docs.kloudfuse.com/platform/latest/reference/api/ingester/
+  baseURL: https://{instance}
+  tags:
+  - Policies
+  properties:
+  - type: OpenAPI
+    url: openapi/kloudfuse-policies-api-openapi.yml
+  - type: Documentation
+    url: https://docs.kloudfuse.com/platform/latest/reference/api/ingester/
+- aid: kloudfuse:kloudfuse-teams-api
+  name: Kloudfuse Teams API
+  description: The Teams API from Kloudfuse — 6 operation(s) for teams.
+  humanURL: https://docs.kloudfuse.com/platform/latest/reference/api/ingester/
+  baseURL: https://{instance}
+  tags:
+  - Teams
+  properties:
+  - type: OpenAPI
+    url: openapi/kloudfuse-teams-api-openapi.yml
+  - type: Documentation
+    url: https://docs.kloudfuse.com/platform/latest/reference/api/ingester/
+- aid: kloudfuse:kloudfuse-traces-api
+  name: Kloudfuse Traces API
+  description: The Traces API from Kloudfuse — 5 operation(s) for traces.
+  humanURL: https://docs.kloudfuse.com/platform/latest/reference/api/ingester/
+  baseURL: https://{instance}
+  tags:
   - Traces
   properties:
   - type: OpenAPI
-    url: openapi/_ae-authored/kloudfuse-platform-openapi.yml
+    url: openapi/kloudfuse-traces-api-openapi.yml
+  - type: Documentation
+    url: https://docs.kloudfuse.com/platform/latest/reference/api/ingester/
+- aid: kloudfuse:kloudfuse-graph-ql-api
+  name: Kloudfuse Graph QL API
+  description: The Graph QL API from Kloudfuse — 1 operation(s) for graph ql.
+  humanURL: https://docs.kloudfuse.com/platform/latest/reference/api/ingester/
+  baseURL: https://{instance}
+  tags:
+  - Graph QL
+  properties:
+  - type: OpenAPI
+    url: openapi/kloudfuse-graph-ql-api-openapi.yml
   - type: Documentation
     url: https://docs.kloudfuse.com/platform/latest/reference/api/ingester/
 x-coverage:
