@@ -106,6 +106,8 @@ apis:
   humanURL: https://docs.kloudfuse.com/platform/latest/reference/api/ingester/
   baseURL: https://{instance}
   tags:
+  - Event
+  tags_raw:
   - Events
   properties:
   - type: OpenAPI
@@ -178,6 +180,8 @@ apis:
   humanURL: https://docs.kloudfuse.com/platform/latest/reference/api/ingester/
   baseURL: https://{instance}
   tags:
+  - Team
+  tags_raw:
   - Teams
   properties:
   - type: OpenAPI
@@ -202,6 +206,8 @@ apis:
   humanURL: https://docs.kloudfuse.com/platform/latest/reference/api/ingester/
   baseURL: https://{instance}
   tags:
+  - GraphQL
+  tags_raw:
   - Graph QL
   properties:
   - type: OpenAPI
