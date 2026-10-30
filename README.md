@@ -64,5 +64,122 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Kloudfuse is a company surfaced via the API Evangelist harvest backlog (source: market-layer-gap) and added to the network as a stub for full-pipeline profiling.
-- https://www.kloudfuse.com
+Kloudfuse is a unified observability platform that consolidates metrics, logs, traces, events, real user monitoring and continuous profiling into a single data lake deployed in the customer's own cloud (VPC). It exposes Prometheus-, Loki- and Tempo-compatible query APIs, a GraphQL query transport, RBAC policy and team REST APIs, an OTLP/Prometheus remote-write ingester, a hydration API for archived data, and an MCP server for AI assistants.
+
+**Areas:** Company · Observability · Monitoring · Logs · Metrics · Tracing · OpenTelemetry · MCP
+
+## Kloudfuse on APIs.io
+
+Everything profiled for Kloudfuse is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/kloudfuse/](https://apis.io/providers/kloudfuse/)** — or go straight to one of the APIs or properties below.
+
+### APIs (10)
+
+- [Kloudfuse Cardinality Explorer API](https://apis.io/apis/kloudfuse/kloudfuse-cardinality-explorer-api/) — The Cardinality Explorer API from Kloudfuse — 3 operation(s) for cardinality explorer.
+- [Kloudfuse Events API](https://apis.io/apis/kloudfuse/kloudfuse-events-api/) — The Events API from Kloudfuse — 1 operation(s) for events.
+- [Kloudfuse Folders API](https://apis.io/apis/kloudfuse/kloudfuse-folders-api/) — The Folders API from Kloudfuse — 9 operation(s) for folders.
+- [Kloudfuse Hydration API](https://apis.io/apis/kloudfuse/kloudfuse-hydration-api/) — The Hydration API from Kloudfuse — 7 operation(s) for hydration.
+- [Kloudfuse Ingester API](https://apis.io/apis/kloudfuse/kloudfuse-ingester-api/) — The Ingester API from Kloudfuse — 5 operation(s) for ingester.
+- [Kloudfuse Metrics API](https://apis.io/apis/kloudfuse/kloudfuse-metrics-api/) — The Metrics API from Kloudfuse — 5 operation(s) for metrics.
+- [Kloudfuse Policies API](https://apis.io/apis/kloudfuse/kloudfuse-policies-api/) — The Policies API from Kloudfuse — 7 operation(s) for policies.
+- [Kloudfuse Teams API](https://apis.io/apis/kloudfuse/kloudfuse-teams-api/) — The Teams API from Kloudfuse — 6 operation(s) for teams.
+- [Kloudfuse Traces API](https://apis.io/apis/kloudfuse/kloudfuse-traces-api/) — The Traces API from Kloudfuse — 5 operation(s) for traces.
+- [Kloudfuse Graph QL API](https://apis.io/apis/kloudfuse/kloudfuse-graph-ql-api/) — The Graph QL API from Kloudfuse — 1 operation(s) for graph ql.
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### MCP servers (1)
+
+Model Context Protocol servers that expose the API to agents.
+
+- [kloudfuse-mcp.yml](https://apis.io/servers/kloudfuse/kloudfuse-mcp-yml/)
+
+#### JSON-LD (1)
+
+Linked-data contexts for the provider's vocabulary.
+
+- [Kloudfuse Context](https://apis.io/jsonld/kloudfuse/kloudfuse-context/)
+
+#### Governance rules (1)
+
+Spectral rulesets for the provider's contracts.
+
+- [Kloudfuse API Rules](https://apis.io/rules/kloudfuse/kloudfuse-rules/)
+
+#### Security (2)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Kloudfuse Domain Security](https://apis.io/security/kloudfuse/kloudfuse-domain-security/)
+- [Kloudfuse Trust Center](https://apis.io/security/kloudfuse/kloudfuse-trust-center/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.kloudfuse.com)
+- [Documentation](https://docs.kloudfuse.com/)
+- [Getting started](https://docs.kloudfuse.com/platform/latest/setup/install/prequisites/index)
+- [API reference](https://docs.kloudfuse.com/platform/latest/reference/api/metrics/)
+- [Pricing](https://www.kloudfuse.com/pricing)
+- [Changelog](https://docs.kloudfuse.com/platform/latest/release-notes/)
+- [Blog](https://www.kloudfuse.com/blog)
+- [Security](https://www.kloudfuse.com/security)
+- [Compliance](https://www.kloudfuse.com/security)
+- [Trust centre](https://trust.kloudfuse.com/)
+- [Privacy policy](https://www.kloudfuse.com/legal/privacy)
+- [GitHub](https://github.com/kloudfuse)
+
+## API Evangelist rating
+
+**Kin Score 37.8** — thin · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 76.7 |
+| Contract quality | 16.6 |
+| Contract governance | 22.0 |
+| Operational transparency | 39.5 |
+| Developer ergonomics | 50.0 |
+| Access clarity | 36.8 |
+
+**Agent readiness 25.3** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | — |
+| Reversibility Documented | documented (partial credit) |
+| MCP Server | templated |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | — |
+| Error Semantics | documented (partial credit) |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 25.5** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/kloudfuse/](https://apis.io/providers/kloudfuse/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Kloudfuse: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/kloudfuse/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
